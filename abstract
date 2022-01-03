@@ -1,4 +1,4 @@
-//추상
+//추상클래스
 public abstract class Student{ //-->상속(재정의)
 string name;
 public abstract void studentInfo();//다형성, {}블럭이없음

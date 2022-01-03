@@ -1,0 +1,27 @@
+public class PhoneExample {
+
+//부모클래스 Phone 자식클래스 SmartPhone
+
+	public static void main(String[] args) {
+		SmartPhone s=new SmartPhone("홍길동");
+		
+		s.turnOn();
+		s.internetSearch();
+		s.turnOff();
+		
+		//다형성=메서드 재정의(오버라이딩)+타입변환
+		//타입변환 종류
+		//1.자동타입변환
+		Phone p=new SmartPhone("홍길동");
+		//자동타입변환이 되면 자식클래스의 멤버에는 접근이 안되므로 다운캐스팅을 해야만 접근가능
+		s=(SmartPhone)p; // 간단한 다운캐스팅 
+		//참조변수 p가 가리키는 객체가 부모클래스인 Phone을 상속받은 자식클래스인지 여부를 체크한다
+		if(p instanceof SmartPhone) {
+			SmartPhone a=(SmartPhone)p;
+			a.turnOn();
+			a.internetSearch();
+			a.turnOff();
+		}
+	}
+
+}

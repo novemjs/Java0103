@@ -4,3 +4,4 @@ string name;
 public abstract void studentInfo();//다형성, {}블럭이없음
 
 }
+//new연산자 이용불가 ,상속을 통해서만 자식클래스만듬

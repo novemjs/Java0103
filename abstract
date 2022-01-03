@@ -1,0 +1,6 @@
+//추상
+public abstract class Student{ //-->상속(재정의)
+string name;
+public abstract void studentInfo();//다형성
+
+}

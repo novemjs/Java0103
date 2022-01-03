@@ -1,0 +1,7 @@
+**interface
+public interface calculator{
+public (abstract)(생략가능) add(int num1,int num2); //추상메서드(100%)
+public (static final) RESULT=1; //상수(100%) , static final 생략가능
+}
+//Calculator:인터페이스이름 CasioCalc:구현객체 , 인터페이스는 다수가 올수 있다.
+public class CasioCalc implements Calculator,xxx,yyy,zzz{

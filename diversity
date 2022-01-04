@@ -1,0 +1,18 @@
+//자동타입변환이 일어나고 instanceof연산자를 이용해 체크후 다운캐스팅(상속과 방법같음)
+
+
+public class Driver {
+	//Vehicle vehicle=new Bus(); --> 자동타입변환
+	//자동타입변환이 발생하면 Bus클래스에서 별도로 생성한 checkFare메서드는 접근불가하므로 다운캐스팅을 해서 실행한다.
+	//다운캐스팅의 조건
+	//자동타입변환이 실행된 상태여야한다, 
+	public void drive(Vehicle vehicle) {
+		//vehicle 참조변수가 가리키는 Bus객체가 Vehicle 인터페이스를 가지고
+		//구현된 객체여부를 확인하는 instanceof 연산자를 사용하여 true값이 리턴되면 다운캐스팅가능
+		if(vehicle instanceof Bus) {
+			Bus bus=(Bus) vehicle;
+			bus.checkFare();
+		}
+		vehicle.run();
+	}
+}

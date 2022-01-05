@@ -1,0 +1,15 @@
+1.NullPointerException
+2.ArrayIndexOutOfBoundsException
+3.NumberFormatException : 문자열을 숫자로 변경할때 발생
+
+-String:문자열클래스
+-object:모든클래스의 최고조상
+-Class:클래스의 모든정보를 가지고 있는 클래스
+1.클래스명,필드,생성자명,메서드명,...
+-Wrapper:기본자료형을 첫째자리를 대문자로 바꿔 객체로선언하게 하는것
+예외)int -> Integer, char => Character
+
+*예외처리
+1.try{} : 예외즉시처리
+2.throws : 지연처리
+3.throw : 강제로 예외발생

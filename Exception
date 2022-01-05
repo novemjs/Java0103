@@ -1,5 +1,5 @@
-1.NullPointerException
-2.ArrayIndexOutOfBoundsException
+1.NullPointerException : 객체가없는데 객체를 사용할려할때
+2.ArrayIndexOutOfBoundsException : 배열에서 인덱스범위 초과할때
 3.NumberFormatException : 문자열을 숫자로 변경할때 발생
 
 -String:문자열클래스

@@ -1,0 +1,18 @@
+String 메소드
+charAt(int index): 특정 위치의 문자를 리턴해준다.
+indexOf("자바") : "자바" 문자열이 시작되는 인덱스를 리턴해준다.
+*******문자열이 포함되어 있지 않으면 -1을 리턴한다.
+if(문자열.indexOf("찾는문자열")!=-1){
+  //포함되어 있는 경우
+}else{
+  //포함되어 있지 않은 경우
+**lastIndexOf()
+substring(시작인덱스, 종료인덱스) : 시작인덱스부터 종료인덱스-1까지 추출한다.
+
+Wrapper클래스 : 기본타입-->객체
+boxing : 기본자료형을 객체타입으로 선언
+ex)int a=100;
+Integer a=new Integer(100);
+unboxing:객체타입으로 선언된 Wrapper클래스를 다시 기본자료형으로 변환하는 과정
+ex)Integer a=new Integer(100);
+int b=a.intValue();

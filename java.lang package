@@ -13,6 +13,10 @@ Wrapper클래스 : 기본타입-->객체
 boxing : 기본자료형을 객체타입으로 선언
 ex)int a=100;
 Integer a=new Integer(100);
+Integer a=Integer.valueOf(100);
 unboxing:객체타입으로 선언된 Wrapper클래스를 다시 기본자료형으로 변환하는 과정
 ex)Integer a=new Integer(100);
 int b=a.intValue();
+
+Math 클래스
+ceil : 올림 floor:내림 long round:반올림
